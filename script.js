@@ -1,9 +1,5 @@
 // For computerSelection: 0 = "rock," 1 = "paper," 2 = "scissors." //
 
-let playerSelection = prompt("So what'll it be? Rock, paper or scissors?").toLowerCase();
-
-let computerSelection = Math.floor(Math.random() * 3);
-
 function playRound(playerSelection, computerSelection) {
   
     if (playerSelection === "rock" && computerSelection === 1) {
