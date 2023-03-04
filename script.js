@@ -23,11 +23,19 @@ function score() {
     let computerScore = 0;
 
     if (playRound(playerSelection, computerSelection).endsWith("!")) {
-        return "score: " + ++playerScore + " " + computerScore;
+        return "score: " + ++playerScore + " | " + computerScore;
     } else if (playRound(playerSelection, computerSelection).endsWith(".")) {
-        return "score: " + playerScore + " " + ++computerScore;
+        return "score: " + playerScore + " | " + ++computerScore;
     } else if (playRound(playerSelection, computerSelection).endsWith("?")) {
-        return "score: " + playerScore + " " + +computerScore;
+        return "score: " + playerScore + " | " + computerScore;
+    }
+
+    if (i = 5 && playerScore > computerScore) {
+        console.log("Congrats, you won the game!")
+    } else if (i = 5 && playerScore < computerScore) {
+        console.log("Better luck next time.")
+    } else if (i = 5 && playerScore === computerScore) {
+        console.log("It's a tie! Good game. :)")
     }
 }
 
@@ -39,6 +47,6 @@ function game() {
 
         computerSelection = Math.floor(Math.random() * 3);
 
-        return [playRound(playerSelection, computerSelection), score()]
+        console.log(playRound(playerSelection, computerSelection), score());
     }
 }
