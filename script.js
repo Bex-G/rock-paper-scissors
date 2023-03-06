@@ -30,11 +30,11 @@ function playRound(playerSelection, computerSelection) {
 function finalScore () {
     
     if (playerScore > computerScore) {
-        console.log("Congrats, you won the game!")
+        console.log ("Congrats, you won the game!")
     } else if (playerScore < computerScore) {
-        console.log("Better luck next time.")
+        console.log ("Better luck next time.")
     } else if (playerScore = computerScore) {
-        console.log("It's a tie! Good game. :)")
+        console.log ("It's a tie! Good game. :)")
     }
 }
 
