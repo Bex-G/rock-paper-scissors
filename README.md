@@ -7,3 +7,12 @@ This project marks my first attempt at working with Javascript. In addition to l
 - Use conditional statements and comparisons.
 - Increment values.
 - Use prompts and reformat user input appropriately.
+
+---
+
+Upon my second visit to this project, I moved out of the console and created a simple UI to play the game instead. This involved:
+
+- DOM manipulation.
+- Working with event listeners.
+- Designing additional functions that reference each other.
+- Reworking old code to better suit the needs of the project.
